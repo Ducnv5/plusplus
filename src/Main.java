@@ -49,6 +49,18 @@ public class Main {
         //code from here
         
     }
+    public static void exercise4() {
+        //print to console the average id of students
+        //print to console all student's name if their ids > 10
+        Map<Student, String> students = new HashMap<>();
+        Student s1 = new Student(6, "A");
+        Student s2 = new Student(5, "B");
+        Student s3 = new Student(31, "A");
+        Student s4 = new Student(1, "A");
+        Student s5 = new Student(4, "D");
+        //code from here
+        
+    }
 }
 class Student {
     private int id;
