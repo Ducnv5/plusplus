@@ -50,14 +50,20 @@ public class Main {
         
     }
     public static void exercise4() {
-        //print to console the average id of students
-        //print to console all student's name if their ids > 10
-        Map<Student, String> students = new HashMap<>();
+        //print to console the average id of students in studentAddress
+        //print to console all student's name in studentAddress if their ids > 10
+        //create a Map<String, List<Student>> studentsByAddress from studentAddress (key is address, value is list of students)
+        Map<Student, String> studentAddress = new HashMap<>();
         Student s1 = new Student(6, "A");
         Student s2 = new Student(5, "B");
         Student s3 = new Student(31, "A");
         Student s4 = new Student(1, "A");
         Student s5 = new Student(4, "D");
+        studentAddress.put(s1, "HN");
+        studentAddress.put(s2, "HCM");
+        studentAddress.put(s3, "HCM");
+        studentAddress.put(s4, "HN");
+        studentAddress.put(s5, "HCM");
         //code from here
         
     }
