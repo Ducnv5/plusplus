@@ -68,7 +68,7 @@ public class Main {
         
     }
     
-    public static void exercise4() {
+    public static void exercise5() {
         //update the code so that method exercise4() print to console "Student name: David, id: 1" (do not change the line 73)
         System.out.println(new Student(1, "David"));
     }
