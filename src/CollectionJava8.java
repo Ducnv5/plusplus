@@ -6,6 +6,7 @@ public class CollectionJava8 {
     int sumIds = calculateSumStudentIds(students);
     List<String> studentNames = getStudentNames(students);
     Map<String, List<Student>> studentsByAddress = groupStudentByAddress(students);
+    printStudnetForEach(students);
   }
   
   public List<Student> getStudentWithIdGreaterThan5(List<Student> input){
@@ -25,6 +26,12 @@ public class CollectionJava8 {
   public Map<String, List<Student>> groupStudentByAddress(List<Student> input){
     //use input.toStream().collect(Collectors.groupBy...)
     return new HashMap<>();
+  }
+  
+  public void printStudnetForEach(List<Student> input){
+    //print all students to console
+    //use input.forEach(....)
+
   }
   
   public static List<Student> getStudents() {
