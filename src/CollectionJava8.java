@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class CollectionJava8 {
   
   public void exercise1() {
@@ -34,7 +36,7 @@ public class CollectionJava8 {
 
   }
   
-  public static List<Student> getStudents() {
+  public List<Student> getStudents() {
     Student s1 = new Student(1, "David", "London");
     Student s2 = new Student(3, "John", "Paris");
     Student s3 = new Student(5, "Alice", "Madrid");
@@ -46,43 +48,43 @@ public class CollectionJava8 {
     Student s9 = new Student(8, "Luna", "Paris");
     return Arrays.asList(s1,s2,s3,s4,s5,s6,s7,s8,s9);
   }
-  
-  
+
+    public class Student {
+        private int id;
+        private String name;
+        private String address;
+        public Student() {
+        }
+
+        public Student(int id, String name, String address) {
+            this.id = id;
+            this.name = name;
+            this.address = address;
+        }
+
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+        public String getAddress() {
+            return address;
+        }
+
+        public void setAddress(String address) {
+            this.address = address;
+        }
+    }
+
 }
 
-public class Student {
-    private int id;
-    private String name;
-    private String address;
-    public Student() {
-    }
-
-    public Student(int id, String name, String address) {
-        this.id = id;
-        this.name = name;
-        this.address = address;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-      public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-}
