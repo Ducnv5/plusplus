@@ -1,4 +1,4 @@
-import java.util.*
+import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
@@ -72,12 +72,13 @@ public class Main {
         //update the code so that method exercise5() print to console "Student name: David, id: 1" (do not change the line 73)
         System.out.println(new Student(1, "David"));
     }
-}
-class Student {
-    private int id;
-    private String name;
-    public Student(int id, String name) {
-        this.id = id;
-        this.name = name;
+    static class Student {
+        private int id;
+        private String name;
+        public Student(int id, String name) {
+            this.id = id;
+            this.name = name;
+        }
     }
 }
+
